@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-size: 2.5rem;
+    color:rgb(211, 41, 135);
+}
+h2 {
+	font-size: 2rem;
+	color:#d83187;
+}
+h3 {
+	font-size: 1.75rem;
+	color:#fc67b6;
+}
+h4 {
+	font-size: 1.5rem;
+	color:#b842a8
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+h1,h2,h3,h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.7em;
+    color:rgb(56, 104, 217);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Clases */
+.container {
+	margin: auto;
+	max-width: 1000px;
+	max-height: 1000px;
+	overflow: auto;
+	padding: 0 20px;
+	margin-top: 10px;;
+}
+
+.large {
+	font-size: 1.25rem;
+}
+
+.display-1 {
+	font-size: 4rem;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 4px;
+}
+
+.btn-dark {
+	background: #000000;
+	border: none;
+	color: #fff;
+}
+
+.btn-dark:hover {
+	background: rgb(252, 211, 232);
+	border: 1px solid #47042e;
+	color: #480323;
+}
+
+form label {
+	display: inline-block;
+	margin-bottom: 6px;
+	font-weight: 300;
+}
+
+form .form-group {
+	margin-bottom: 16px;
+}
+
+form .form-control {
+	display: block;
+	width: 100%;
+	padding: 7px 12px;
+	line-height: 1.5;
+	background-color: #f6f1e7;
+	border: none;
+	border-radius: 4px;
+}
+
+/* Navbar */
+.navbar-home {
+	height: 10vh;
+}
+
+#navbar {
+	overflow: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #e5cad6;
+}
+
+#navbar a {
+	color: rgb(75, 19, 59);
+}
+
+#navbar .logo {
+	float: left;
+	padding-top: 5px;
+}
+
+#navbar .logo img {
+	 height: 100px;/*tamaño del logo */
+}
+
+#navbar ul {
+	float: right;
+	font-size: 14px;
+	list-style: none;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;/*le da espacio al nav*/
+	padding: 20px;
+	text-align: center;
+}
+
+#navbar ul li a:hover,#navbar ul li .current {
+	text-decoration:underline;
+}
+
+/* Showcase */
+#showcase {
+	height: 80vh;
+	background: #fccefa48;
+	padding: 80px 0;
+}
+
+#showcase h1 {
+	line-height: 1em;
+}
+
+#showcase .title-outline {
+	color: rgba(22, 135, 183, 0.854);
+	/* -webkit-text-stroke: 3px rgb(5, 18, 134); */
+}
+
+.showcase-row {
+	display: flex;
+}
+
+.showcase-row-title {
+	padding-top: 20px;
+}
+
+.showcase-row-image {
+	display:inline-block;
+	margin: 0 auto;
+}
+
+.showcase-row-image img {
+	height: 250px;
+}
+
+/* Sobre Mi */
+#about {
+	background: #f4ede2be;
+	padding: 90px 0;
+}
+
+#about h2 {
+	padding-bottom: 50px;
+}
+
+.about-row {
+	display: flex;
+}
+
+.about-row-image img {
+	height: 300px;
+	padding-right: 90px;
+}
+
+#about hr {
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+/* Skills */
+#skills {
+	padding: 90px 0;
+    background-color:#26611f33;
+}
+
+#skills h2 {
+	padding-bottom: 50px;
+}
+
+.skills-row {
+	display: flex;
+	padding-bottom: 50px;
+}
+
+.skills-row-left,
+.skills-row-right {
+	width: 50%;
+	display: flex;
+}
+
+.skills-row-left-image,
+.skills-row-right-image {
+	width: 50%;
+	text-align: right;
+	padding-right: 50px;
+}
+
+.skills-row-left-image img,
+.skills-row-right-image img {
+	height: 100px;
+}
+
+/* hobbys */
+#hobbys {
+	padding: 90px 0;
+    background-color:#b6f8af33;
+}
+
+#hobbys h2 {
+	padding-bottom: 50px;
+}
+
+.hobbys-row {
+	display: flex;
+	padding-bottom: 50px;
+}
+
+.hobbys-row-left,
+.hobbys-row-right {
+	width: 50%;
+	display: flex;
+}
+.hobbys-row-left-text{
+	color:#276409;
+}
+.hobbys-row-left-image,
+.hobbys-row-right-image {
+	width: 50%;
+	text-align: right;
+	padding-right: 50px;
+}
+
+.hobbys-row-left-image img,
+.hobbys-row-right-image img {
+	height: 100px;
+}
+
+/* Proyectos */
+#portfolio {
+	padding: 90px 0;
+	background: #87c2fd46;
+}
+
+#portfolio h2 {
+	padding-bottom: 50px;
+}
+
+.portfolio-row {
+	display: flex;
+}
+
+.portfolio-row-box {
+	margin: 20px;
+	background: rgba(141, 225, 248, 0.306);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.portfolio-row-box img {
+	width: 100%;
+}
+
+.portfolio-row-box p {
+	text-align: center;
+	padding: 20px;
+	margin-top: 0;
+}
+
+/* Contact */
+#contact {
+	padding: 90px 0;
+	background: #81b66829;
+}
+
+#contact h2 {
+	padding: 50px;
+}
+
+.contact-form {
+	background: rgba(255, 218, 154, 0.484);
+	width: 50%;
+	margin: 20px auto;
+	padding: 70px 50px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h5 {
+	text-align: center;
+	padding-bottom: 40px;
+	font-weight: 900;
+}
+
+.contact-form button {
+	width: 100%;
+}
+
+/* Footer */
+.footer-home {
+	height: 30vh;
+}
+
+#mainfooter {
+	position:auto;
+	bottom: 0;
+	background: #c79ab6a1;
+	text-align: center;
+	padding: 10px;
+}
